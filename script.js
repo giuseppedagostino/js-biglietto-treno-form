@@ -7,11 +7,19 @@
 // Categoria selezionata dall'utente (offerta)
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
-// L'utente inserisce nome e cognome
+// Pulsante genera
+var pulsanteGenera = document.getElementById('genera');
+pulsanteGenera.addEventListener("click",
+  function () {
+    // L'utente inserisce nome e cognome
+    var nome = document.getElementById('nome').value;
+    console.log("Nome inserito " + nome);
 
-
-// L'utente inserisce il numero di km
-
+    // L'utente inserisce il numero di km
+    var chilometri = document.getElementById('chilometri').value;
+    console.log("Chilometri inseriti " + chilometri);
+  }
+);
 
 // L'utente seleziona la sua categoria
 

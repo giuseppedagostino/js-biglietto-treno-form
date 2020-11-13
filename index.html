@@ -14,16 +14,20 @@
     <h1>Biglietto Treno Form</h1>
 
     <!-- inserimento nome e cognome -->
-    <input type="text" name="nome" placeholder="Inserisci nome e cognome"></input>
+    <input type="text" placeholder="Inserisci nome e cognome" id="nome"></input>
     <!-- inserimento chilometri -->
-    <input type="number" name="chilometri" placeholder="Inserisci chilometri da percorrere"></input>
+    <input type="number" placeholder="Inserisci chilometri da percorrere" id="chilometri"></input>
     <!-- selezione categoria -->
+    <!-- a che serve l'attributo for di label?? -->
     <label for="categoria"></label>
     <select id="categoria" name="categoria">
       <option value="Minorenne">Minorenne</option>
       <option value="Maggiorenne">Maggiorenne</option>
       <option value="Over 65">Over 65</option>
     </select>
+
+    <!-- pulsante genera -->
+    <button type="button" id="genera">Genera</button>
 
     <!-- script -->
     <script src="script.js" charset="utf-8"></script>
