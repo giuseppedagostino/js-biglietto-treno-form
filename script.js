@@ -18,6 +18,18 @@ pulsanteGenera.addEventListener("click",
     // L'utente inserisce il numero di km
     var chilometri = document.getElementById('chilometri').value;
     console.log("Chilometri inseriti " + chilometri);
+
+    // Gestione età del passeggero
+    var eta = document.getElementById('eta').value;
+    console.log("Categoria inserita " + eta);
+
+    // Numero casuale codice treno 90k - 100k
+    var codiceTreno = Math.floor(Math.random() * (100000 - 90000 + 1)) + 90000;
+    console.log("codiceTreno " + codiceTreno);
+
+    // Numero casuale numero carrozza 1 - 9
+    var numeroCarrozza = Math.ceil(Math.random()*9);
+    console.log("Numero casuale carrozza " + numeroCarrozza);
   }
 );
 
@@ -29,11 +41,3 @@ var prezzoKM = 0.21;
 console.log(prezzoKM + " prezzo al chilometro");
 var prezzoCliente = chilometri * prezzoKM;
 console.log(prezzoCliente + " prezzo calcolo età escluso");
-
-// Numero casuale codice treno 90k - 100k
-var codiceTreno = Math.floor(Math.random() * (100000 - 90000 + 1)) + 90000;
-console.log("codiceTreno " + codiceTreno);
-
-// Numero casuale numero carrozza 1 - 9
-var numeroCarrozza = Math.ceil(Math.random()*9);
-console.log("Numero casuale carrozza " + numeroCarrozza);
