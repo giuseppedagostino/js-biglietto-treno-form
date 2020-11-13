@@ -3,8 +3,8 @@
 // FATTO Nome passeggero
 // FATTO Codice treno (numero casuale tra 90000 e 100000 escluso)
 // FATTO Numero carrozza (numero casuale tra 1 e 9)
-// Prezzo calcolato
-// Categoria selezionata dall'utente (offerta)
+// FATTO Prezzo calcolato
+// FATTO Categoria selezionata dall'utente (offerta)
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
 // Pulsante genera
