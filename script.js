@@ -35,6 +35,10 @@ pulsanteGenera.addEventListener("click",
     } else {
       var prezzoFinale = prezzoCliente;
     }
+    console.log("Prezzo Finale non arrotondato €" + prezzoFinale);
+
+    // Arrotondamento per eccesso ai due numeri decimali
+    prezzoFinale = prezzoFinale.toFixed(2);
     console.log("Prezzo Finale €" + prezzoFinale);
 
     // Numero casuale codice treno 90k - 100k
