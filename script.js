@@ -1,8 +1,8 @@
 // TRACCIA
 // Creiamo un finto biglietto del treno con:
-// Nome passeggero
-// Codice treno (numero casuale tra 90000 e 100000 escluso)
-// Numero carrozza (numero casuale tra 1 e 9)
+// FATTO Nome passeggero
+// FATTO Codice treno (numero casuale tra 90000 e 100000 escluso)
+// FATTO Numero carrozza (numero casuale tra 1 e 9)
 // Prezzo calcolato
 // Categoria selezionata dall'utente (offerta)
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
@@ -19,9 +19,23 @@ pulsanteGenera.addEventListener("click",
     var chilometri = document.getElementById('chilometri').value;
     console.log("Chilometri inseriti " + chilometri);
 
+    // €0.21 al km
+    var prezzoKM = 0.21;
+    console.log("Prezzo al chilometro €" + prezzoKM);
+    var prezzoCliente = chilometri * prezzoKM;
+    console.log("Calcolo prezzo cliente €" + prezzoCliente);
+
     // Gestione età del passeggero
     var eta = document.getElementById('eta').value;
     console.log("Categoria inserita " + eta);
+    if (eta == "Minorenne") {
+      var prezzoFinale = prezzoCliente - ((prezzoCliente / 100) * 20);
+    } else if (eta == "Over 65") {
+      var prezzoFinale = prezzoCliente - ((prezzoCliente / 100) * 40);
+    } else {
+      var prezzoFinale = prezzoCliente;
+    }
+    console.log("Prezzo Finale €" + prezzoFinale);
 
     // Numero casuale codice treno 90k - 100k
     var codiceTreno = Math.floor(Math.random() * (100000 - 90000 + 1)) + 90000;
@@ -29,15 +43,6 @@ pulsanteGenera.addEventListener("click",
 
     // Numero casuale numero carrozza 1 - 9
     var numeroCarrozza = Math.ceil(Math.random()*9);
-    console.log("Numero casuale carrozza " + numeroCarrozza);
+    console.log("numeroCarrozza " + numeroCarrozza);
   }
 );
-
-// L'utente seleziona la sua categoria
-
-
-// €0.21 al km
-var prezzoKM = 0.21;
-console.log(prezzoKM + " prezzo al chilometro");
-var prezzoCliente = chilometri * prezzoKM;
-console.log(prezzoCliente + " prezzo calcolo età escluso");
