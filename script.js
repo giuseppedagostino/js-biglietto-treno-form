@@ -19,6 +19,16 @@ pulsanteGenera.addEventListener("click",
     var prezzoCliente = chilometri * prezzoKM;
     console.log("Calcolo prezzo cliente €" + prezzoCliente);
 
+    // Numero casuale codice treno 90k - 100k
+    var codiceTreno = Math.floor(Math.random() * (100000 - 90000 + 1)) + 90000;
+    console.log("codiceTreno " + codiceTreno);
+    document.getElementById('codiceTrenoBiglietto').innerHTML = codiceTreno;
+
+    // Numero casuale numero carrozza 1 - 9
+    var numeroCarrozza = Math.ceil(Math.random()*9);
+    console.log("numeroCarrozza " + numeroCarrozza);
+    document.getElementById('numeroCarrozzaBiglietto').innerHTML = numeroCarrozza;
+
     // Gestione età del passeggero
     var eta = document.getElementById('eta').value;
     console.log("Categoria inserita " + eta);
@@ -41,16 +51,6 @@ pulsanteGenera.addEventListener("click",
     console.log("Prezzo Finale €" + prezzoFinale);
     document.getElementById('prezzoFinale').innerHTML = "€" + prezzoFinale;
 
-    // Numero casuale codice treno 90k - 100k
-    var codiceTreno = Math.floor(Math.random() * (100000 - 90000 + 1)) + 90000;
-    console.log("codiceTreno " + codiceTreno);
-    document.getElementById('codiceTrenoBiglietto').innerHTML = codiceTreno;
-
-    // Numero casuale numero carrozza 1 - 9
-    var numeroCarrozza = Math.ceil(Math.random()*9);
-    console.log("numeroCarrozza " + numeroCarrozza);
-    document.getElementById('numeroCarrozzaBiglietto').innerHTML = numeroCarrozza;
-
     // Cambio le classi del biglietto
     var biglietto = document.getElementById('biglietto');
     biglietto.classList.remove("hidden");
@@ -69,7 +69,7 @@ pulsanteGenera.addEventListener("click",
 var pulsanteAnnulla = document.getElementById('annulla');
 pulsanteAnnulla.addEventListener("click",
   function () {
-    // Cambio la classe del biglietto
+    // Resetta le classi del biglietto
     var biglietto = document.getElementById('biglietto');
     biglietto.className = "hidden";
 

@@ -9,7 +9,7 @@
 /* REGOLE COMUNI */
 body {
   padding: 100px;
-  background-color: black;
+  background-color: #A6160A;
 }
 h1 {
   margin-bottom: 20px;
@@ -37,8 +37,8 @@ h1 {
   display: flex;
   flex-direction: column;
   /* estetica */
-  background-color: darkred;
-  border: 5px solid ghostwhite;
+  background-color: ghostwhite;
+  border: 10px solid black;
   border-radius: 25px;
 }
 #generatore .row:nth-of-type(1) {
@@ -71,9 +71,6 @@ h1 {
   /* estetica */
   border-radius: 25px;
 }
-#biglietto > div {
-  background-color: ghostwhite;
-}
 #biglietto > div > p:first-child {
   padding: 5px;
   margin-bottom: 20px;
@@ -84,13 +81,13 @@ h1 {
 }
 .standard {
   background-color: ghostwhite;
-  border: 5px solid black;
+  border: 10px solid black;
 }
 .silver {
-  background-color: ghostwhite;
-  border: 5px solid #c0c0c0;
+  background: linear-gradient(15deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+  border: 10px solid #c0c0c0;
 }
 .gold {
-  background-color: ghostwhite;
-  border: 5px solid #ffd700;
+  background: linear-gradient(15deg, rgba(255,255,255,1) 0%, rgba(255,215,0,1) 100%);
+  border: 10px solid #ffd700;
 }
