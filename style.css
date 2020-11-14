@@ -19,11 +19,11 @@ h1 {
 }
 .hidden {
   opacity: 0;
-  transition: 1s;
+  transition: 0.75s;
 }
 .visible {
   opacity: 1;
-  transition: 1s;
+  transition: 0.75s;
 }
 
 /* sezione di input dei dati */
@@ -40,6 +40,7 @@ h1 {
   background-color: ghostwhite;
   border: 10px solid black;
   border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 #generatore .row:nth-of-type(1) {
   /* istruzioni flex */
@@ -70,6 +71,11 @@ h1 {
   justify-content: space-around;
   /* estetica */
   border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+#biglietto:hover {
+  box-shadow: 0 24px 48px 0 rgba(0,0,0,0.8);
+  cursor: pointer;
 }
 #biglietto > div > p:first-child {
   padding: 5px;
