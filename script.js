@@ -48,6 +48,11 @@ pulsanteGenera.addEventListener("click",
     var numeroCarrozza = Math.ceil(Math.random()*9);
     console.log("numeroCarrozza " + numeroCarrozza);
     document.getElementById('numeroCarrozzaBiglietto').innerHTML = numeroCarrozza;
+
+    // Cambio la classe del biglietto
+    var biglietto = document.getElementById('biglietto');
+    biglietto.classList.remove("hidden");
+    biglietto.classList.add("visible");
   }
 );
 
