@@ -47,6 +47,10 @@ h1 {
 #generatore .row:nth-of-type(2) button {
   margin: 20px;
 }
+#generatore p {
+  margin-bottom: 20px;
+  color: ghostwhite;
+}
 
 /* sezione di output dei dati */
 #biglietto {

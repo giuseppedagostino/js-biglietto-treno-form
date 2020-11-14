@@ -18,17 +18,26 @@
       <!-- prima riga -->
       <div class="row">
         <!-- inserimento nome e cognome -->
-        <input type="text" placeholder="Nome e cognome" id="nome"></input>
+        <div>
+          <p>Nome e cognome</p>
+          <input type="text" placeholder="Inserisci" id="nome"></input>
+        </div>
         <!-- inserimento chilometri -->
-        <input type="number" placeholder="Percorrenza (Km)" id="chilometri"></input>
+        <div>
+          <p>Percorrenza (Km)</p>
+          <input type="number" placeholder="Inserisci" id="chilometri"></input>
+        </div>
 
         <!-- selezione categoria -->
-        <label for="eta"></label>
-        <select id="eta" name="eta">
-          <option value="Minorenne">Minorenne</option>
-          <option value="Maggiorenne">Maggiorenne</option>
-          <option value="Over 65">Over 65</option>
-        </select>
+        <div>
+          <p>Fascia d'età</p>
+          <label for="eta"></label>
+          <select id="eta" name="eta">
+            <option value="Minorenne">Minorenne</option>
+            <option value="Maggiorenne">Maggiorenne</option>
+            <option value="Over 65">Over 65</option>
+          </select>
+        </div>
       </div>
 
       <!-- seconda riga -->
@@ -37,7 +46,7 @@
         <button type="button" id="genera">Genera</button>
         <!-- pulsante annulla -->
         <button type="button" id="annulla">Annulla</button>
-        
+
       </div>
     </section>
 
