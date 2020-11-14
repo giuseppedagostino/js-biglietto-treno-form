@@ -69,8 +69,6 @@ h1 {
   display: flex;
   justify-content: space-around;
   /* estetica */
-  background-color: darkred;
-  border: 5px solid ghostwhite;
   border-radius: 25px;
 }
 #biglietto > div {
@@ -83,4 +81,16 @@ h1 {
 }
 #offertaSottotitolo {
   font-size: 0.6em;
+}
+.standard {
+  background-color: ghostwhite;
+  border: 5px solid black;
+}
+.silver {
+  background-color: ghostwhite;
+  border: 5px solid #c0c0c0;
+}
+.gold {
+  background-color: ghostwhite;
+  border: 5px solid #ffd700;
 }

@@ -51,9 +51,17 @@ pulsanteGenera.addEventListener("click",
     console.log("numeroCarrozza " + numeroCarrozza);
     document.getElementById('numeroCarrozzaBiglietto').innerHTML = numeroCarrozza;
 
-    // Cambio la classe del biglietto
+    // Cambio le classi del biglietto
     var biglietto = document.getElementById('biglietto');
-    biglietto.className = "visible";
+    biglietto.classList.remove("hidden");
+    biglietto.classList.add("visible");
+    if (eta == "Minorenne") {
+      biglietto.classList.add("silver");
+    } else if (eta == "Over 65") {
+      biglietto.classList.add("gold");
+    } else {
+      biglietto.classList.add("standard");
+    }
   }
 );
 
@@ -73,6 +81,7 @@ pulsanteAnnulla.addEventListener("click",
     // Cancello tutti i valori del biglietto
     document.getElementById('nomeBiglietto').value = "";
     document.getElementById('offerta').value = "";
+    document.getElementById('offertaSottotitolo').value = "";
     document.getElementById('codiceTrenoBiglietto').value = "";
     document.getElementById('numeroCarrozzaBiglietto').value = "";
     document.getElementById('prezzoFinale').value = "";
