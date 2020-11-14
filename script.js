@@ -1,3 +1,5 @@
+document.getElementById('eta').value = "";
+
 // Pulsante genera
 var pulsanteGenera = document.getElementById('genera');
 pulsanteGenera.addEventListener("click",
@@ -51,15 +53,28 @@ pulsanteGenera.addEventListener("click",
 
     // Cambio la classe del biglietto
     var biglietto = document.getElementById('biglietto');
-    biglietto.classList.remove("hidden");
-    biglietto.classList.add("visible");
+    biglietto.className = "visible";
   }
 );
 
 // Pulsante annulla
 var pulsanteAnnulla = document.getElementById('annulla');
-pulsanteGenera.addEventListener("click",
+pulsanteAnnulla.addEventListener("click",
   function () {
+    // Cambio la classe del biglietto
+    var biglietto = document.getElementById('biglietto');
+    biglietto.className = "hidden";
 
+    // Cancello tutti i valori inseriti precedentemente
+    document.getElementById('nome').value = "";
+    document.getElementById('chilometri').value = "";
+    document.getElementById('eta').value = "";
+
+    // Cancello tutti i valori del biglietto
+    document.getElementById('nomeBiglietto').value = "";
+    document.getElementById('offerta').value = "";
+    document.getElementById('codiceTrenoBiglietto').value = "";
+    document.getElementById('numeroCarrozzaBiglietto').value = "";
+    document.getElementById('prezzoFinale').value = "";
   }
 );
