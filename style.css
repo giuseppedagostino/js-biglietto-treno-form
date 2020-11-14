@@ -25,6 +25,18 @@ h1 {
   opacity: 1;
   transition: 0.75s;
 }
+input, select, button {
+  padding: 10px;
+  border: 3px solid #A6160A;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+button:hover {
+  transform: scale(1.075);
+  cursor: pointer;
+  color: ghostwhite;
+  background-color: #A6160A;
+}
 
 /* sezione di input dei dati */
 #generatore {
@@ -74,6 +86,7 @@ h1 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 #biglietto:hover {
+  transform: scale(1.025);
   box-shadow: 0 24px 48px 0 rgba(0,0,0,0.8);
   cursor: pointer;
 }
