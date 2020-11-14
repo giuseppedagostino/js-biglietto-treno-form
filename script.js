@@ -48,5 +48,12 @@ pulsanteGenera.addEventListener("click",
     // Numero casuale numero carrozza 1 - 9
     var numeroCarrozza = Math.ceil(Math.random()*9);
     console.log("numeroCarrozza " + numeroCarrozza);
+
+    // SCRIVO NEL BIGLIETTO TUTTE LE INFORMAZIONI
+    document.getElementById('nomeBiglietto').innerHTML = nome;
+    document.getElementById('offerta').innerHTML = eta;
+    document.getElementById('codiceTrenoBiglietto').innerHTML = codiceTreno;
+    document.getElementById('numeroCarrozzaBiglietto').innerHTML = numeroCarrozza;
+    document.getElementById('prezzoFinale').innerHTML = "€" + prezzoFinale;
   }
 );

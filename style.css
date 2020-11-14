@@ -53,3 +53,11 @@ select, button {
   border-radius: 25px;
   opacity: 0.75;
 }
+#biglietto > div {
+  background-color: ghostwhite;
+}
+#biglietto > div > p:first-child {
+  padding: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
