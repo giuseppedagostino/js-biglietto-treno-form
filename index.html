@@ -14,23 +14,31 @@
 
     <h1>Benvenuto nella D'Agostino S.r.l.</h1>
     <section id="generatore">
-      <!-- inserimento nome e cognome -->
-      <input type="text" placeholder="Nome e cognome" id="nome"></input>
-      <!-- inserimento chilometri -->
-      <input type="number" placeholder="Percorrenza (Km)" id="chilometri"></input>
 
-      <!-- selezione categoria -->
-      <label for="eta"></label>
-      <select id="eta" name="eta">
-        <option value="Minorenne">Minorenne</option>
-        <option value="Maggiorenne">Maggiorenne</option>
-        <option value="Over 65">Over 65</option>
-      </select>
+      <!-- prima riga -->
+      <div class="row">
+        <!-- inserimento nome e cognome -->
+        <input type="text" placeholder="Nome e cognome" id="nome"></input>
+        <!-- inserimento chilometri -->
+        <input type="number" placeholder="Percorrenza (Km)" id="chilometri"></input>
 
-      <!-- pulsante genera -->
-      <button type="button" id="genera">Genera</button>
-      <!-- pulsante annulla -->
-      <button type="button" id="annulla">Annulla</button>
+        <!-- selezione categoria -->
+        <label for="eta"></label>
+        <select id="eta" name="eta">
+          <option value="Minorenne">Minorenne</option>
+          <option value="Maggiorenne">Maggiorenne</option>
+          <option value="Over 65">Over 65</option>
+        </select>
+      </div>
+
+      <!-- seconda riga -->
+      <div class="row">
+        <!-- pulsante genera -->
+        <button type="button" id="genera">Genera</button>
+        <!-- pulsante annulla -->
+        <button type="button" id="annulla">Annulla</button>
+        
+      </div>
     </section>
 
     <h1>Il suo biglietto</h1>
@@ -43,6 +51,7 @@
       <div>
         <p>Offerta</p>
         <p id="offerta"></p>
+        <p id="offertaSottotitolo"></p>
       </div>
 
       <div>
