@@ -57,3 +57,11 @@ pulsanteGenera.addEventListener("click",
     document.getElementById('prezzoFinale').innerHTML = "€" + prezzoFinale;
   }
 );
+
+// Pulsante annulla
+var pulsanteAnnulla = document.getElementById('annulla');
+pulsanteGenera.addEventListener("click",
+  function () {
+
+  }
+);
